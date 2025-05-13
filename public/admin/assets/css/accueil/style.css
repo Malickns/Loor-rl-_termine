@@ -1,0 +1,53 @@
+ /* Styles spécifiques à la section utilisateurs */
+ .admin-section {
+    padding: 1.5rem;
+    background-color: #f8f9fc;
+}
+
+.card {
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.role-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.stats-card {
+    background: linear-gradient(87deg, #11cdef 0, #1171ef 100%);
+    color: white;
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

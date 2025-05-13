@@ -1,0 +1,1 @@
+<script src="vitrine/js/pricing/main.js"></script>

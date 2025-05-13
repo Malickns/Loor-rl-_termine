@@ -1,0 +1,13 @@
+.swal-wide {
+    max-width: 800px !important;
+}
+.badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.owl-carousel-item img {
+    height: 500px; /* Définis la hauteur souhaitée */
+    object-fit: cover; /* Ajuste l'image sans déformation */
+    width: 100%; /* Assure que l'image prend toute la largeur */
+}

@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="{{ asset('vitrine/css/apropos/style.css') }}">

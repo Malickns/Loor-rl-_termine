@@ -1,0 +1,245 @@
+:root {
+    --primary: #6366f1;
+    --hover: #4f46e5;
+    --dark: #1e1b4b;
+    --light: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, var(--primary), var(--hover));
+    padding: 10rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="white" stroke-width="0.5" stroke-opacity="0.1"/></svg>') repeat;
+    opacity: 0.1;
+    animation: rotate 60s linear infinite;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: var(--light);
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.filters-section {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+
+.filter-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+}
+
+.search-input {
+    padding-left: 40px;
+    border-radius: 10px;
+}
+
+.custom-select {
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem 1rem;
+}
+
+.filter-btn {
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.item-card {
+    background: var(--light);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.item-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover .item-image img {
+    transform: scale(1.1);
+}
+
+.item-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.item-content {
+    padding: 1.5rem;
+}
+
+.item-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.view-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    background: #f3f4f6;
+    transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background: #e5e7eb;
+}
+
+.pagination {
+    gap: 0.5rem;
+}
+
+.pagination .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    background: #f3f4f6;
+    color: var(--dark);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pagination .page-item.active .page-link {
+    background: var(--primary);
+    color: var(--light);
+}
+
+.pagination .page-link:hover {
+    background: var(--hover);
+    color: var(--light);
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-filtres {
+margin-top: 4rem;
+position: relative;
+z-index: 10;
+}
+
+.carte-filtre {
+border: none;
+border-radius: 15px;
+box-shadow: 0 4px 20px var(--shadow);
+}
+
+.recherche-conteneur {
+position: relative;
+}
+
+.recherche-icone {
+position: absolute;
+left: 15px;
+top: 50%;
+transform: translateY(-50%);
+color: #6b7280;
+}
+
+.recherche-champ {
+padding-left: 40px;
+border-radius: 10px;
+}
+
+.select-personnalise {
+border-radius: 10px;
+border: 1px solid #e5e7eb;
+padding: 0.75rem 1rem;
+}
+
+.bouton-filtre {
+border-radius: 10px;
+padding: 0.75rem 1.5rem;
+transition: all 0.3s ease;
+}

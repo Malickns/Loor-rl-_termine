@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="{{ asset('vitrine/css/annonces/style.css') }}">

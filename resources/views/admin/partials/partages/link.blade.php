@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="{{ asset('admin/assets/css/partages/style.css') }}">
